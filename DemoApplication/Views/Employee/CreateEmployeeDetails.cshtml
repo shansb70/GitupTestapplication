@@ -1,0 +1,42 @@
+﻿@model Employee.Data.Models.EmployeeData
+@{
+   var result = ViewData["result"];
+}
+
+<form method="post">
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Employee Details</h2>
+            <br />
+            <p>
+                <label asp-for="EmpFirstName">First Name  : </label>
+                <input asp-for="EmpFirstName" />
+            </p>
+
+            <p>
+                <label asp-for="EmpLastName">Last Name  : </label>
+                <input asp-for="EmpLastName" />
+            </p>
+
+            <p>
+                <label asp-for="EmpDepartment">Department:</label>
+                <input asp-for="EmpDepartment" />
+            </p>
+
+            <p><button type="submit">Submit</button></p>
+        </div>
+
+        <br />
+
+    </div>
+
+    <div>
+        @result
+    </div>
+ 
+
+</form>
+
+
